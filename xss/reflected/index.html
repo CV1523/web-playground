@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflected XSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="head">
+        <a href="/" id="head-p">Pretty Vulnerable Site</a>
+    </div>
+    <div id="main">
+        <div id="search">
+            <form method="get">
+                <input type="search" name="s" id="search-inp" placeholder="&nbsp;Type here..." autofocus>
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </div>
+        <div id="search-list">
+            Search result for&nbsp;
+            "<div id="search-rst"></div>"
+        </div>
+    </div>
+    <div id="footer">
+        <i>by</i><a target="_blank" href="https://github.com/Harish-Kumar-K523" id="acr-tg">&nbsp;Cracked Version</a>
+    </div>
+</body>
+</html>
